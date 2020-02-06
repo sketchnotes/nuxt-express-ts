@@ -1,17 +1,16 @@
 <template>
-  <div v-html="author" class="container" />
+  <App />
 </template>
 
 <script lang="ts">
-import { createComponent, ref } from '@vue/composition-api'
+import { createComponent } from '@vue/composition-api'
+
+// import Component: App
+import App from '@/components/App.vue'
 
 export default createComponent({
-  setup() {
-    const author = ref('&#8734;')
-
-    return {
-      author
-    }
+  components: {
+    App
   }
 })
 </script>

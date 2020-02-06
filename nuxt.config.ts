@@ -64,6 +64,14 @@ module.exports = {
     '~/api'
   ],
   /*
+   ** Eslint typescript configuration
+   */
+  typescript: {
+    typeCheck: {
+      eslint: true
+    }
+  },
+  /*
    ** Build configuration
    */
   build: {
