@@ -21,7 +21,7 @@ async function start(): Promise<void> {
     await nuxt.ready()
   }
 
-  app.post('/api/author', (req: any, res: any) => {
+  app.post('/api/author', (req: Object, res: Object) => {
     console.log('POST from server folder')
     console.log(res, req)
   })
